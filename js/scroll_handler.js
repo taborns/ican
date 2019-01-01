@@ -14,6 +14,7 @@ $(document).ready(function(e) {
         $('.main-nav-outer').css('background-color', 'white');
         $('#resources .resource-dropdown').css('background-color', 'white');
         $('.main-nav li a').css('color','#222');
+        $('.main-nav li.selected-menu a').css('color','white');
         
     }
 
