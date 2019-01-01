@@ -20,6 +20,7 @@
 	<link href="css/responsive.css" rel="stylesheet" type="text/css">
 	<link href="css/magnific-popup.css" rel="stylesheet" type="text/css">
 	<link href="css/animate.css" rel="stylesheet" type="text/css">
+	<link href="css/drop-styles.css" rel="stylesheet" type="text/css">
 
 	<script type="text/javascript" src="js/jquery.1.8.3.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
@@ -29,6 +30,7 @@
 	<script type="text/javascript" src="js/wow.js"></script>
 	<script type="text/javascript" src="js/classie.js"></script>
 	<script type="text/javascript" src="js/magnific-popup.js"></script>
+	<script type="text/javascript" src="js/drop-script.js"></script>
 	<script src="contactform/contactform.js"></script>
 
 	
@@ -55,23 +57,37 @@
 				<!--main-nav-start-->
 				<div class="container">
 					<div class='col-sm-2 col-xs-4'><img class="logo" src="img/logo.png" /></div>
-					<div class="col-md-10">
+					<div class="col-md-10" id="cssmenu">
 						<ul class="main-nav">
 							<li><a href="index.html"><span class="fa fa-home"></span></a></li>
-							<li class="selected-menu"><a href="about.html">About</a></li>
-							<li><a href="construction.html">Job Seekers</a></li>
-							<li><a href="construction.html">Employers</a></li>
+							<li><a href="about.html">About</a></li>
+							<li class="has-sub"><a href="construction.html"><span>Job Seekers</span></a>
+								<ul>
+										<li><a href='construction.html'><span>Search jobs</span></a></li>
+										<li><a href='construction.html'><span>Post your resume</span></a></li>
+								</ul>
+
+							</li>
+							<li class="has-sub">
+								<a href="construction.html"><span>Employers</span></a>
+									<ul>
+											<li><a href='construction.html'><span>Post Jobs</span></a></li>
+											<li><a href='construction.html'><span>Recruitment</span></a></li>
+											<li><a href='construction.html'><span>HR Consulting services</span></a></li>
+									</ul>
+
+							</li>
 							<li><a href="construction.html">Youth Careers</a></li>
 							
 							<li><a href="construction.html">Events</a></li>
-							<li id='resources'>
+							<li class='has-sub'>
 								<a href="">Resources</a>
 
-								<ol class="resource-dropdown">
+								<ul>
 									<li><a href='construction.html'>Blogs</a></li>
 									<li><a href='construction.html'>News</a></li>
 									<li><a href='construction.html'>Advices</a></li>
-								</ol>
+								</ul>
 							</li>
 							
 							<!-- <li><a href="#Portfolio">Portfolio</a></li> -->

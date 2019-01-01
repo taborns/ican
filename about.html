@@ -20,6 +20,7 @@
 	<link href="css/responsive.css" rel="stylesheet" type="text/css">
 	<link href="css/magnific-popup.css" rel="stylesheet" type="text/css">
 	<link href="css/animate.css" rel="stylesheet" type="text/css">
+	<link href="css/drop-styles.css" rel="stylesheet" type="text/css">
 
 	<script type="text/javascript" src="js/jquery.1.8.3.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
@@ -29,7 +30,9 @@
 	<script type="text/javascript" src="js/wow.js"></script>
 	<script type="text/javascript" src="js/classie.js"></script>
 	<script type="text/javascript" src="js/magnific-popup.js"></script>
+	<script type="text/javascript" src="js/drop-script.js"></script>
 	<script src="contactform/contactform.js"></script>
+	
 
 	
 
@@ -55,23 +58,37 @@
 					<!--main-nav-start-->
 					<div class="container">
 						<div class='col-sm-2 col-xs-4'><img class="logo" src="img/logo.png" /></div>
-						<div class="col-md-10">
+						<div class="col-md-10" id="cssmenu">
 							<ul class="main-nav">
 								<li><a href="index.html"><span class="fa fa-home"></span></a></li>
 								<li class="selected-menu"><a href="about.html">About</a></li>
-								<li><a href="construction.html">Job Seekers</a></li>
-								<li><a href="construction.html">Employers</a></li>
+								<li class="has-sub"><a href="construction.html"><span>Job Seekers</span></a>
+									<ul>
+											<li><a href='construction.html'><span>Search jobs</span></a></li>
+											<li><a href='construction.html'><span>Post your resume</span></a></li>
+									</ul>
+	
+								</li>
+								<li class="has-sub">
+									<a href="construction.html"><span>Employers</span></a>
+										<ul>
+												<li><a href='construction.html'><span>Post Jobs</span></a></li>
+												<li><a href='construction.html'><span>Recruitment</span></a></li>
+												<li><a href='construction.html'><span>HR Consulting services</span></a></li>
+										</ul>
+	
+								</li>
 								<li><a href="construction.html">Youth Careers</a></li>
 								
 								<li><a href="construction.html">Events</a></li>
-								<li id='resources'>
+								<li class='has-sub'>
 									<a href="">Resources</a>
 	
-									<ol class="resource-dropdown">
+									<ul>
 										<li><a href='construction.html'>Blogs</a></li>
 										<li><a href='construction.html'>News</a></li>
 										<li><a href='construction.html'>Advices</a></li>
-									</ol>
+									</ul>
 								</li>
 								
 								<!-- <li><a href="#Portfolio">Portfolio</a></li> -->
@@ -108,7 +125,7 @@
 				<div class="col-sm-6  featured-work">
 					<h2 style="text-align: center; color: #642891">Background</h2>
 					<P class="padding-b" style="text-align: justify; word-wrap:break-word">
-							iCAN, otherwise known as, international Career Advisory Network  is an employment solutions  and career advisory consultancy company that  offer sustainable solutions in  career and workforce development services, workforce development & skills building, professional skills trainings and capacity building to Ethiopia’s eager labor force ; whilst supporting and strengthening institutions, businesses and organizations through consultancy, training and talent acquisition services. ICAN brings over 10 years of international and local experience in employment and training before its establishment in 2018. 
+							iCAN is an employment solutions  and career advisory consultancy company that  offers sustainable solutions in career and workforce development  services, professional skills trainings and capacity building to Ethiopia’s eager labor force ; whilst supporting and strengthening institutions, businesses and organizations through talent acquisition services training  and consultancy.  ICAN brings over 10 years of international and local experience in employment and training before its establishment in 2018 in Ethiopia.
                 </div>
                 <div class="col-sm-6 hidden-xs" style="overflow: hidden; height: 300px">
                         <div class="background-image">
@@ -128,25 +145,39 @@
                         <div class="service-col col-lg-12 col-sm-12  text-left wow fadeInRight delay-02s">
                         
         
-                                <div class="col-lg-4  col-lg-offset-1 col-sm-6 service-list">
+                                <div class="col-lg-3   col-sm-6 service-list">
                                         <div class="service-list-col1">
                                             <i class="fa fa-lightbulb-o"></i>
                                         </div>
-                                        <div class="service-list-col2">
+                                        <div class="service-list-col2" style="text-align: center">
                                             <h3>Philosophy </h3>
-                                            <p>We prepare job seekers with necessary job skills for opportunities and success that drive economic growth.  </p>
+                                            <p>The key to workforce Success and positive workforce outcomes in employment, performance on the job, income, and entrepreneurial success is effective career development, hiring the right talent and mastery of soft skills.   </p>
                                         </div>
                                 </div>
             
-                                <div class="service-list col-lg-offset-1 col-lg-4 col-sm-6">
+                                <div class="service-list col-lg-offset-1 col-lg-3 col-sm-6">
                                     <div class="service-list-col1">
                                         <i class="fa fa-eye"></i>
                                     </div>
-                                    <div class="service-list-col2">
+                                    <div class="service-list-col2"  style="text-align: center">
                                         <h3>VISION  </h3>
-                                        <p>iCAN provides HR consultancy  and organizational development  strategies that drive value to your business. </p>
+                                        <p>iCAN envisions competent talent and stable workforce that can develop self, create employment and/or employable that is productive in the workplace and dreams of professional success that contribute to the overall economic development of Ethiopia.  </p>
                                     </div>
-                                </div>
+								</div>
+								
+								<div class="service-list col-lg-offset-1 col-lg-3 col-sm-6">
+										<div class="service-list-col1">
+											<i class="fa fa-road"></i>
+										</div>
+										<div class="service-list-col2"  style="text-align: center">
+											<h3>MISSION  </h3>
+											<p>
+
+													Provide quality and professional recruitment services to employers <br>
+													Build and produce workforce talent that meets the needs of businesses and employers through our career advisory, comprehensive and quality workforce development services  and job readiness/ soft skills trainings
+											</p>
+										</div>
+								</div>
             
                                 
                             </div>
@@ -166,59 +197,9 @@
                 </div>
             </div>
     </section>
-    <section class="main-section  alabaster">
-            <!--main-section alabaster-start-->
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 fadeInUp wow delay-05s featured-work">
-                        <h2 style="color: #642891">Mission</h2>
-                        
-                            <ol class='mission-list'>
-                                <li><span>1.</span><p>Enable the youth workforce to create employment and/or become employable  </p></li>
-                                <li><span>2.</span><p>Prepare youth to the world of work by providing  career services and workforce development and help job seekers to secure the next leg on their personal career journey  </p></li>
-                                <li><span>3.</span><p>Career and job readiness capacity building s training including  soft skills training, cv/resume writing, interview preparation, personal branding , etc </p></li>
-                                <li><span>4.</span><p>Enable job seekers advance their career by enhancing/unleashing their potential that drives self-sufficiency and businesses  success in Ethiopia </p></li>
-                                <li><span>5.</span><p>Provide career advisory, comprehensive and quality workforce development services to job seekers</p></li>
-                                <li><span>6.</span><p>Create platform and industry linkages that facilitates and connects job seekers with employers through an array of conferences, career fairs, and capacity building activities, events, seminars and networking opportunities in securing their next career. </p></li>
-                                <li><span>7.</span><p>Build skilled workforce talent that meets the needs of businesses and employers.</p></li>
-                                <li><span>8.</span><p>Provide quality  and professional talent acquisition services to employers/businesses</p></li>
-                            </ol>
-                    </div>
-                    <div  class="col-sm-4 col-sm-offset-2 wow hidden-xs fadeInRight delay-02s">
-                            <img style="margin-top: 100px" src="img/mission.svg" />
-                    </div>
-                    
-                </div>
-            </div>
-    </section>
 
 
-	<!--business-talking-end-->
-	<div class="container">
-		<section class="main-section contact" >
 
-			<div class="row">
-				<div class="col-sm-4 hidden-xs wow fadeInLeft">
-                        <img style="margin-top: 100px" src="img/services.svg " />
-				</div>
-				<div class="col-sm-6 col-sm-offset-1  wow fadeInUp delay-05s">
-                        <div class='row'>
-                            <div class='col-sm-1'><h2 style="text-align: left; color: #642891">Services</h2></div>
-                        </div>
-                    <ol class="mission-list">
-                    <li><span>1.</span><p>Provide access to a comprehensive system of employment and training services and resources </p></li>
-                    <li><span>2.</span><p>Provide Career and job readiness capacity building s training including  soft skills training, CV/resume writing, interview preparation, personal branding , Career fairs etc </p></li>
-                    <li><span>3.</span><p>Industry linkage and Workforce development trainings and career services such as Career coaching and guidance , Career exploration and management</p></li>
-                    <li><span>4.</span><p>Soft skills training such as  social skills, higher order thinking skills (including problem solving, critical thinking, and decision making), self-control, positive self-concept, and communication and other employability skills development skills are applicable across sectors </p></li>
-                    <li><span>5.</span><p>Career center strategy design and development , career center establishment and career counselor training’s Career planning and professional development</p></li>
-                    <li><span>6.</span><p>Serve as their business partner in recruiting skilled workforce(recruitment service/ executive search)</p></li>
-                    <li><span>7.</span><p>Workplace education , Workforce development education and  HR consulting & training/Customized training</p></li>
-                    <li><span>8.</span><p>core competencies in positive  youth development and fresh graduate recruitment Advisory </p></li>
-                    </ol>
-				</div>
-			</div>
-		</section>
-	</div>
 	<footer class="footer">
             <div class="container">
                 <div class="row">

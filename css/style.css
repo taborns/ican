@@ -992,12 +992,12 @@ ol.service-list li{
 	
 	margin: 10px 10px;
 }
-#resources {
+.resources {
 	position: relative;
 	display: inline-block;
   }
   
-#resources .resource-dropdown {
+.resources .resource-dropdown {
 	display: none;
 	position: absolute;
 	background-color: transparent;
@@ -1013,7 +1013,7 @@ ol.service-list li{
 	  
   }
   
-#resources:hover .resource-dropdown {
+.resources:hover .resource-dropdown {
 	display: block;
   }
 
