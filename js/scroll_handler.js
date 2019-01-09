@@ -4,10 +4,10 @@ $(document).ready(function(e) {
     function changeBackUn() {
         backgroundChanged =!backgroundChanged;
         $('.main-nav-outer').css('background-color', 'transparent');
-        $('.main-nav-outer .top-bar').css('color', '#222');
+        $('.main-nav-outer .top-bar').css('color', 'white');
         $('#resources .resource-dropdown').css('background-color','transparent');
         $('.main-nav li a').css('color','white');
-        $('.main-nav-outer .top-bar .social-icons span').css('color', '#222');
+        $('.main-nav-outer .top-bar .social-icons span').css('color', 'white');
         
     }
 
@@ -17,6 +17,8 @@ $(document).ready(function(e) {
         $('#resources .resource-dropdown').css('background-color', 'white');
         $('.main-nav > li > a').css('color','#222');
         $('.main-nav li.selected-menu a').css('color','white');
+        $('.main-nav-outer .top-bar').css('color', '#333');
+        $('.main-nav-outer .top-bar .social-icons span').css('color', '#333 ');
         
     }
 
