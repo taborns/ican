@@ -242,7 +242,7 @@ img.logo{
 	font-size:100px;
 	text-align: center;
 	display:block;
-	color:#642891;
+	color:#5c04c8;
 	font-family: 'FontAwesome';
 	line-height:38px;
 }
@@ -461,13 +461,13 @@ img {
 	width:68px;
 	height:68px;
 	margin:0 auto;
-	border:2px solid #642891;
+	border:2px solid #5c04c8;
 	border-radius:50%;
 	display:block;
 	line-height:68px;
 	text-align:center;
 	font-size:27px;
-	color:#642891;
+	color:#5c04c8;
 	cursor: pointer;
 	transition:all 0.3s ease-in-out;
 	-moz-transition:all 0.3s ease-in-out;
@@ -798,8 +798,9 @@ border: 2px solid #fff;
 ---------------------------------*/
 
 .footer{
-	background:url(../img/pw_maze_black_2X.png) left top repeat;
+	_background:url(../img/pw_maze_black_2X.png) left top repeat;
 	padding:35px 0 35px;
+	background: #fafafa;
 }
 .footer-logo{
 	
@@ -894,12 +895,16 @@ border: 2px solid #fff;
 	animation-delay: 1.2s; 
 	-webkit-animation-delay: 1.2s; 
 }
-
+.empty-top {
+	background: transparent;
+	height: 10px;
+}
 .top-bar {
+	
 	background: transparent;
 	border-bottom:1px solid #333		;
 	width: 83%;
-	height: 40px;
+	height: 50px;
 	z-index: 999;
 	padding: 10px 0 0px;
 	color: white;
@@ -911,11 +916,15 @@ border: 2px solid #fff;
 }
 
 a:hover {
-	color:#642891 !important;
+	color:#5c04c8 !important;
 }
 
 .top-bar .social-icons span {
-	margin: 0px;
+	
+font-size: 1.5em;
+}
+.top-bar .social-icons  a:hover {
+	color: #5c04c8;
 }
 figure.founder{
 	overflow: hidden;
@@ -1018,7 +1027,7 @@ ol.service-list li{
   }
 
   .selected-menu {
-	  background-color: #642891;
+	  background-color: #5c04c8;
 	  color: white;
 	  padding: 10px;
 	  border-bottom: solid 1px white;

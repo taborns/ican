@@ -4,8 +4,10 @@ $(document).ready(function(e) {
     function changeBackUn() {
         backgroundChanged =!backgroundChanged;
         $('.main-nav-outer').css('background-color', 'transparent');
+        $('.main-nav-outer .top-bar').css('color', '#222');
         $('#resources .resource-dropdown').css('background-color','transparent');
         $('.main-nav li a').css('color','white');
+        $('.main-nav-outer .top-bar .social-icons span').css('color', '#222');
         
     }
 
@@ -20,8 +22,12 @@ $(document).ready(function(e) {
 
     $('#test').scrollToFixed({
         preUnfixed: function() { changeBackUn() },
-        preFixed: function() { changeBackPre() }
+        preFixed: function() { changeBackPre() },
+        offsetTop : 10,
+        
+        
     });
+    
 
     $('.res-nav_click').click(function() {
         $('.main-nav').slideToggle();
