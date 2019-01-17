@@ -63,7 +63,7 @@ h3{
 	color:#222222;
 	font-size:16px;
 	margin:0 0 5px 0;
-	text-transform:uppercase;
+	text-transform:none;
 	font-weight:400;
 }
 h6{
@@ -82,7 +82,7 @@ p{
 /* Header Styles
 ---------------------------------*/
 
-.header{
+.my-header{
 	background-image:url(../img/back-home.jpg);
 	background-repeat: repeat;
 	background-size: cover;
@@ -90,7 +90,7 @@ p{
 
 	
 }
-.header .main-header {
+.my-header .main-header {
 	padding:210px 0;
 	text-align:center;
 }
@@ -99,7 +99,7 @@ p{
 	width:250px;
 	margin:0 auto 35px;
 }
-.header h1{
+.my-header h1{
 	font-family: 'Roboto','Montserrat',sans-serif;
 	font-size:50px;
 	font-weight:400;
@@ -161,7 +161,7 @@ color: #fff;
 }
 
 .link:active, .link:focus {
-	background: #7cc576;
+	background: #5c04c8;
 	text-decoration:none;
 	color:#fff !important;
 }
@@ -194,6 +194,7 @@ img.logo{
 .main-nav li{
 	display:inline;
 	margin:0 0px;
+	font-weight: bold;
 }
 .main-nav li a{
 	display:inline-block;
@@ -906,10 +907,13 @@ border: 2px solid #fff;
 	width: 83%;
 	height: 50px;
 	z-index: 999;
-	padding: 10px 0 0px;
+	padding: 10px 0px 50px 5px;
 	color: white;
 	font-weight: bold;
 }
+
+
+
 
 .top-bar a {
 	color: white;
@@ -920,8 +924,9 @@ a:hover {
 }
 
 .top-bar .social-icons span {
-	
-font-size: 1.5em;
+color: #5c04c8;
+font-size: 1.8em;
+padding-right: 2px;
 }
 .top-bar .social-icons  a:hover {
 	color: #5c04c8;
@@ -1031,4 +1036,132 @@ ol.service-list li{
 	  color: white;
 	  padding: 10px;
 	  border-bottom: solid 1px white;
+  }
+
+  /* test file */
+  .topnav {
+	background-color: white;
+	width: 83%;
+	
+	
+  }
+  .topnav-container{
+	  float: right;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-transform: uppercase;
+	font-weight: 600;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 13px;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .active {
+	background-color: #5c04c8;
+	color: white;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+	display: none;
+  }
+  
+  /* Dropdown container - needed to position the dropdown content */
+  .dropdown {
+	float: left;
+	
+  }
+  
+  /* Style the dropdown button to fit inside the topnav */
+  .dropdown .dropbtn {
+	font-size: 13px;
+	border: none;
+	outline: none;
+	color: white;
+	text-transform: uppercase;
+	font-weight: 600;
+	padding: 14px 16px;
+	background-color: inherit;
+	font-family: inherit;
+	margin: 0;
+  }
+  
+  /* Style the dropdown content (hidden by default) */
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+  }
+  
+  /* Style the links inside the dropdown */
+  .dropdown-content a {
+	float: none;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+  }
+  
+  /* Add a dark background on topnav links and the dropdown button on hover */
+  .topnav a:hover, .dropdown:hover .dropbtn {
+	background-color: #5c04c8;
+	color: white !important;
+  }
+  
+  /* Add a grey background to dropdown links on hover */
+  .dropdown-content a:hover {
+	background-color: #5c04c8;
+	color: white;
+  }
+  
+  /* Show the dropdown menu when the user moves the mouse over the dropdown button */
+  .dropdown:hover .dropdown-content {
+	display: block;
+  }
+  
+  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+  @media screen and (max-width: 919px) {
+	/* .topnav a:not(:first-child), .dropdown .dropbtn {
+	  display: none;
+	}
+	.topnav a.icon {
+	  float: right;
+	  display: block;
+	}
+	.topnav {
+		background: white;
+	} */
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 919px) {
+	/* .topnav.responsive {position: relative;}
+	.topnav.responsive a.icon {
+	  position: absolute;
+	  right: 0;
+	  top: 0;
+	}
+	.topnav.responsive a {
+	  float: none;
+	  display: block;
+	  text-align: left;
+	}
+	.topnav.responsive .dropdown {float: none;}
+	.topnav.responsive .dropdown-content {position: relative;}
+	.topnav.responsive .dropdown .dropbtn {
+	  display: block;
+	  width: 100%;
+	  text-align: left;
+	} */
   }

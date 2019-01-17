@@ -1,4 +1,4 @@
-.header{
+.my-header{
 	background-image:url(../img/section-bg1.jpg);
 
 	background-repeat: repeat;
@@ -7,6 +7,6 @@
 
 	
 }
-.header .main-header {
+.my-header .main-header {
 	padding:150px 0;
 }
